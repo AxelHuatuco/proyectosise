@@ -1,0 +1,63 @@
+<div class="container p-4" style="margin-top: 70px;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">ACTUALIZAR EMPLEADO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/edit1/{{empleado.id}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="name" class="input-group-text">Nombre</label>
+                            <input class="form-control" type="text" name="nomemp" id="nomemp" placeholder="Nombres"
+                                value="{{empleado.nomemp}}" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="lastname" class="input-group-text">Apellidos</label>
+                            <input class="form-control" type="text" name="apeemp" id="apeemp" placeholder="Apellidos"
+                                value="{{empleado.apeemp}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Nro. DNI</label>
+                            <input class="form-control" type="text" name="nrodniemp" id="nrodniemp"
+                                value="{{empleado.nrodniemp}}" placeholder="Nro. DNI" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Nro. Teléfono</label>
+                            <input class="form-control" type="text" name="telemp" id="telemp" placeholder="Nro. Célular"
+                                value="{{empleado.telemp}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="distrito" class="input-group-text">Departamento
+                            <select class="form-select" id="distrito" name="distrito" required>
+                                <option value="" disabled selected>Selecciona un departamento</option>
+                                <option value="RRHH">Recursos Humanos</option>
+                                <option value="VENTAS">Ventas</option>
+                                <option value="MARKETING">Marketing</option>
+                                <option value="FINANZAS">Finanzas</option>
+                                <option value="OPERACIONES">Operaciones</option>
+                                <option value="TI">Tecnologías de la Información</option>
+                                <option value="LOGISTICA">Logística</option>
+                                <option value="ADMINISTRACION">Administración</option>
+                                <option value="SERVICIO_AL_CLIENTE">Servicio al Cliente</option>
+                                <option value="LEGAL">Legal</option>
+                                <option value="OTROS">Otros</option>
+                            </select>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="salary" class="input-group-text">Salario</label>
+                            <input class="form-control" type="text" name="salario" id="salario" placeholder="Salario"
+                                value="{{empleado.salario}}" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button type="submit" class="btn btn-success">Actualizar</button>
+                            <!-- Enlace para cancelar -->
+                            <a href="/list1" class="btn btn-danger">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

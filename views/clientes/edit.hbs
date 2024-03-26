@@ -1,0 +1,92 @@
+<div class="container p-4" style="margin-top: 70px;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">ACTUALIZAR CLIENTE</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/edit/{{cliente.id}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="name" class="input-group-text">Nombre</label>
+                            <input class="form-control" type="text" name="nomcli" id="nomcli" placeholder="Nombres"
+                                value="{{cliente.nomcli}}" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="lastname" class="input-group-text">Apellidos</label>
+                            <input class="form-control" type="text" name="apecli" id="apecli" placeholder="Apellidos"
+                                value="{{cliente.apecli}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Nro. DNI</label>
+                            <input class="form-control" type="text" name="nrodnicli" id="nrodnicli"
+                                value="{{cliente.nrodnicli}}" placeholder="Nro. DNI" required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Nro. Teléfono</label>
+                            <input class="form-control" type="text" name="telcli" id="telcli" placeholder="Nro. Célular"
+                                value="{{cliente.telcli}}" required>
+                        </div>
+                        
+                        <div class="input-group mt-2">
+                            <label for="distrito" class="input-group-text">Distrito</label>
+                            <select class="form-select" id="distrito" name="distrito" required>
+                                <option value="Lima">Lima</option>
+                                        <option value="Ancón">Ancón</option>
+                                        <option value="Ate">Ate</option>
+                                        <option value="Barranco">Barranco</option>
+                                        <option value="Breña">Breña</option>
+                                        <option value="Carabayllo">Carabayllo</option>
+                                        <option value="Chaclacayo">Chaclacayo</option>
+                                        <option value="Chorrillos">Chorrillos</option>
+                                        <option value="Cieneguilla">Cieneguilla</option>
+                                        <option value="Comas">Comas</option>
+                                        <option value="El Agustino">El Agustino</option>
+                                        <option value="Independencia">Independencia</option>
+                                        <option value="Jesús María">Jesús María</option>
+                                        <option value="La Molina">La Molina</option>
+                                        <option value="La Victoria">La Victoria</option>
+                                        <option value="Lima">Lima</option>
+                                        <option value="Lince">Lince</option>
+                                        <option value="Los Olivos">Los Olivos</option>
+                                        <option value="Lurigancho">Lurigancho</option>
+                                        <option value="Lurín">Lurín</option>
+                                        <option value="Magdalena del Mar">Magdalena del Mar</option>
+                                        <option value="Miraflores">Miraflores</option>
+                                        <option value="Pachacámac">Pachacámac</option>
+                                        <option value="Pucusana">Pucusana</option>
+                                        <option value="Pueblo Libre">Pueblo Libre</option>
+                                        <option value="Puente Piedra">Puente Piedra</option>
+                                        <option value="Punta Hermosa">Punta Hermosa</option>
+                                        <option value="Punta Negra">Punta Negra</option>
+                                        <option value="Rímac">Rímac</option>
+                                        <option value="San Bartolo">San Bartolo</option>
+                                        <option value="San Borja">San Borja</option>
+                                        <option value="San Isidro">San Isidro</option>
+                                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                        <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                                        <option value="San Luis">San Luis</option>
+                                        <option value="San Martín de Porres">San Martín de Porres</option>
+                                        <option value="San Miguel">San Miguel</option>
+                                        <option value="Santa Anita">Santa Anita</option>
+                                        <option value="Santa María del Mar">Santa María del Mar</option>
+                                        <option value="Santa Rosa">Santa Rosa</option>
+                                        <option value="Santiago de Surco">Santiago de Surco</option>
+                                        <option value="Surquillo">Surquillo</option>
+                                        <option value="Villa El Salvador">Villa El Salvador</option>
+                                        <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button type="submit" class="btn btn-success">Actualizar</button>
+                            <!-- Enlace para cancelar -->
+                            <a href="/list" class="btn btn-danger">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
